@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, CadastroActivity.class);
             startActivity(intent);
         });
+
+        Button btnVoltar = findViewById(R.id.btn_voltar);
+        btnVoltar.setOnClickListener(v -> finish());
     }
 
     @Override
