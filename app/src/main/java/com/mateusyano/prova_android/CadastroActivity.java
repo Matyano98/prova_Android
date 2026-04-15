@@ -26,7 +26,6 @@ public class CadastroActivity extends AppCompatActivity {
         editQuantidade = findViewById(R.id.edit_quantidade);
         Button btnSalvar = findViewById(R.id.btn_salvar);
         Button btnVerLista = findViewById(R.id.btn_ver_lista);
-        Button btnVoltar = findViewById(R.id.btn_voltar);
 
         btnSalvar.setOnClickListener(v -> salvarProduto());
 
@@ -34,8 +33,6 @@ public class CadastroActivity extends AppCompatActivity {
             Intent intent = new Intent(CadastroActivity.this, MainActivity.class);
             startActivity(intent);
         });
-
-        btnVoltar.setOnClickListener(v -> finish());
     }
 
     private void salvarProduto() {
