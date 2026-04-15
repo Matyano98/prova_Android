@@ -47,7 +47,9 @@ public class CadastroActivity extends AppCompatActivity {
         }
 
         try {
-            double preco = Double.parseDouble(precoStr);
+            // Substitui vírgula por ponto para evitar erro no parse
+            String precoTratado = precoStr.replace(",", ".");
+            double preco = Double.parseDouble(precoTratado);
             int quantidade = Integer.parseInt(quantidadeStr);
 
             if (preco <= 0) {
