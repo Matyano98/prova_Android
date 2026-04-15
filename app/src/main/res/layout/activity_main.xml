@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/azul_escuro"
     android:padding="16dp">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Produtos em Estoque"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +27,7 @@
         android:layout_marginBottom="16dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btn_voltar_cadastro"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitulo">
 
@@ -45,6 +46,8 @@
         android:layout_height="56dp"
         android:layout_marginBottom="8dp"
         android:text="Ir para Cadastro"
+        android:textColor="@color/azul_escuro"
+        app:backgroundTint="@color/white"
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Voltar"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
